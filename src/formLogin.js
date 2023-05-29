@@ -37,17 +37,10 @@ const errorfield = document.getElementById("errorfield");
 const handleLogin = (e) => {
   e.preventDefault();
   axios.post('https://event-backend-test.vercel.app/login', {
-    usertype: userType,
-    username: username,
-    password: password
-  }, {
-    headers: {
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
-      'Access-Control-Allow-Headers': 'Content-Type'
-    }
-  })
+  usertype: userType,
+  username: username,
+  password: password
+})
   .then((response) => {
     if (response.data.status===false){
     setError("Account not found");
