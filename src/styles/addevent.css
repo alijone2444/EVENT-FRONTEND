@@ -1,0 +1,9 @@
+.edit-icon {
+    position: absolute;
+    right: 10px;
+    pointer-events: none; /* to allow clicking the input */
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }

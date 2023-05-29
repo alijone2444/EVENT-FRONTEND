@@ -1,0 +1,117 @@
+.my-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .building-div{
+    height: 70vh;
+    width: 100%;
+}
+  .building-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 10px solid rgba(133, 133, 133, 0.295);
+}
+.name{
+    text-align: left;
+    text-transform: capitalize;
+    padding-left: 20px;
+    font-family: Georgia, serif;
+    padding-top: 40px;
+  }
+.btnhover{
+  font-family: Helvetica;
+  font-size: larger;
+  border: 2px solid grey;
+}
+.btnhover:hover{
+  color: black;
+}
+.font{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  margin: 20px;
+  font-family: Georgia, serif;
+  font-weight: lighter;
+}
+.font img{
+width: 70px;
+height: 70px;
+}
+.timer-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    min-width: 220px;
+    background: linear-gradient(to right, #3991e4, #e1e2e2,#ffffff,#e7e7e7,#3991e4); /* Replace with your desired gradient colors */
+    border-radius: 5%;
+    margin-bottom:20px ;
+}
+
+.box{    
+  width: 100%;
+    padding: 10px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;   
+    font-style: italic;
+}
+.box:hover{
+  transform: scale(1.1);}
+.label{
+    width: 100%;
+    border: transparent;
+    font-size: small;
+}
+.info-container{
+  display: flex;
+  flex-direction: start;
+  padding-left: 10%;
+  padding-Right: 10%;
+}
+  .address-container{
+    display: flex;
+    width: 80vw;
+    height: 50vh;
+    justify-content: center;
+  
+}
+.header{
+  font-weight: 400;
+  font-size: 22px;
+  text-align: left;
+}
+.paragraph{
+  font-weight: 300;
+  padding-left: 50px;
+  text-align: left;
+}
+p {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+  .header{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 18px;
+  }
+  .address-container{
+    height: 40vh;
+  }
+}
+p::first-letter {
+  text-transform: uppercase;
+}

@@ -1,0 +1,63 @@
+.Modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 40%;
+    width: 100%;
+     box-shadow: 16px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    margin: auto;
+  
+  }
+  .Modal-container > form {
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+      
+}
+  .ui.divider {
+    margin: 20px 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .field {
+    
+    margin-bottom: 20px;
+  }
+  
+  .labele {
+    
+    background-color: rgb(232, 237, 238);
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  
+  .buttone {
+    background-color: blue;
+    color: white;
+    padding: 18px 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .buttone:hover {
+    background-color: darkblue;
+  }
+  
+  .buttone:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+  }
+  
+  
+  .para {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  

@@ -1,0 +1,12 @@
+.left-right-divs{
+    margin-top: 5%;
+}
+.style{
+    border-top: 4px solid rgba(255, 255, 255, 0.514);
+}
+.icons-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: xx-large;
+}
