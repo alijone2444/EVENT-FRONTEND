@@ -71,16 +71,7 @@ html{
 }
 
 @media (max-width: 400px){
-  .container1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      }
-      .sub-container{
-        
-      backdrop-filter: blur(10px);
-      }
+
       .left-container {
         display: flex;
         width: 50vw;
@@ -88,13 +79,6 @@ html{
         justify-content: center;
         margin-bottom:4%;
       }
-      .right-container{
-        height: 70%;
-      }
-    .sub-container{
-      width: 70vw;
-      height: auto;
-  
-    }
+    
   
   }
