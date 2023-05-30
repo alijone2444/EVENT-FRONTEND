@@ -283,10 +283,6 @@ background-color: #2b2b2b;
 .image-buttons-group{
     grid-template-columns: repeat(2, 1fr);}
 
-.nav-link{
-border:2px solid black ;
-border-top:transparent;
-}
 .navbar-collapse{
     background-color: transparent; 
     border-radius:10px ;

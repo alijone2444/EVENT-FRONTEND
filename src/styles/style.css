@@ -60,10 +60,11 @@ html{
       margin-bottom:10%;   
     }
     .right-container{
-      height: 70%;
+      height: 60%;
+        align-items: flex-start;
     }
   .sub-container{
-    width: 70vw;
+    width: 80vw;
     height: auto;
 
   }
@@ -71,14 +72,10 @@ html{
 }
 
 @media (max-width: 400px){
-
-      .left-container {
-        display: flex;
-        width: 50vw;
-        align-items: center;
-        justify-content: center;
-        margin-bottom:4%;
-      }
     
+      .right-container{
+        height: 60%;
+          align-items: flex-start;
+      }
   
   }

@@ -36,7 +36,7 @@ const GoToSignup = e => {
 const errorfield = document.getElementById("errorfield");
 const handleLogin = (e) => {
   e.preventDefault();
-  axios.post('https://event-backend-test.vercel.app/login', {
+  axios.post('http://localhost:3002/login', {
   usertype: userType,
   username: username,
   password: password
@@ -61,7 +61,7 @@ const handleLogin = (e) => {
   return (
     <div>
         <div className="sub-container ">
-            <h1 style={{color:"white"}}>Login <span className="badge bg-new-2">Portal</span></h1>
+            <h1 style={{color:"white"}}>Event <span className="badge bg-new-2">Portal</span></h1>
             <div>
                 <form id = "signup-form">
                     <select className="form-select margin-top" value={userType} onChange={handleUserTypeChange} id="user-type" >
