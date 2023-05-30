@@ -36,7 +36,7 @@ const GoToSignup = e => {
 const errorfield = document.getElementById("errorfield");
 const handleLogin = (e) => {
   e.preventDefault();
-  axios.post('http://event-backend-test.vercel.app.json/login', {
+  axios.post('http://event-backend-test.vercel.app/login', {
   usertype: userType,
   username: username,
   password: password
