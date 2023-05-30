@@ -69,3 +69,32 @@ html{
   }
 
 }
+
+@media (max-width: 400px){
+  .container1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      }
+      .sub-container{
+        
+      backdrop-filter: blur(10px);
+      }
+      .left-container {
+        display: flex;
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:10%;   
+      }
+      .right-container{
+        height: 80%;
+      }
+    .sub-container{
+      width: 80vw;
+      height: auto;
+  
+    }
+  
+  }
