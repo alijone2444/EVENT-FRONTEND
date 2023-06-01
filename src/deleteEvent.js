@@ -1,8 +1,8 @@
 import { useLocation } from 'react-router-dom';
 import React,{ useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/requests.css'
-import axios from 'axios';
+import './styles/requests.css';
+import axios from './axiosInterceptor';
 import RenderAlert from './alert';
 import Cookies from 'js-cookie';
 import EventsEditModal from './editModal.js';

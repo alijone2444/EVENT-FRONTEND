@@ -2,7 +2,7 @@ import { Button, Modal } from 'react-bootstrap';
 import { useState } from 'react';
 import './styles/popup.css';
 import { useEffect } from 'react';
-import axios from 'axios';
+import axios from './axiosInterceptor';
 
 function BannerPopup() {
   const [showModal, setShowModal] = useState(true);

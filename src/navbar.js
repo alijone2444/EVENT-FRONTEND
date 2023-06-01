@@ -10,7 +10,7 @@ import Image from './images/nophoto.png';
 import Cookies from 'js-cookie';
 import { FaCamera } from 'react-icons/fa';
 import { useState,useEffect } from 'react';
-import axios from 'axios';
+import axios from './axiosInterceptor';
 import { Buffer } from 'buffer';
 
 function NavbarComponent(props) {
@@ -63,7 +63,7 @@ function NavbarComponent(props) {
   
 
   return (
-    <Navbar collapseOnSelect expand="lg" variant="light" style={{ background: 'transparent' }}>
+    <Navbar collapseOnSelect expand="lg" variant="light" style={{ background: 'transparent'}}>
       <Container style={{ margin: 0, maxWidth: '100%' }}>
         <div>
           <Navbar.Brand className="gradient-heading-topic">

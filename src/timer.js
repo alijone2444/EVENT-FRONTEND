@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './styles/openevent.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from './images/clock.png';
-import axios from 'axios';
+import axios from './axiosInterceptor';
 function Timecount(props) {
   const targetDate = new Date(props.data.time + ' ' + props.data.DateHeld);
   const currentDate = new Date();

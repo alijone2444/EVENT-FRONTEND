@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { FaThumbsUp } from 'react-icons/fa';
-import axios from 'axios';
+import axios from './axiosInterceptor';
 import './styles/openevent.css'
 
 const LikeDislikeComponent = (props) => {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from './axiosInterceptor';
 import {AiOutlineLogin,AiOutlineUserAdd} from 'react-icons/ai'
 import Cookies from 'js-cookie';
 

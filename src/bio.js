@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Button, ProgressBar } from 'react-bootstrap';
 import './styles/bio.css';
-import axios from 'axios'
+import axios from './axiosInterceptor';
 import Cookies from 'js-cookie';
 
 const BioPage = () => {

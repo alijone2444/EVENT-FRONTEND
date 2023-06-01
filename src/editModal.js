@@ -1,6 +1,6 @@
 import React, { useState ,useEffect} from "react";
 import { Modal, Button, Form,Image } from "react-bootstrap";
-import axios from 'axios';
+import axios from './axiosInterceptor';
 import { Buffer } from 'buffer';
 import RenderEditAlert from './editalert';
 import {FaMapMarkerAlt} from 'react-icons/fa';

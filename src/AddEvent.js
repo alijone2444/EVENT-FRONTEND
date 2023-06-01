@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FaEdit , FaMapMarkerAlt} from 'react-icons/fa';
 import './index.css';
 import './styles/addevent.css';
-import axios from 'axios';
+import axios from './axiosInterceptor';
 import { Modal, Button, Form, Image } from 'react-bootstrap';
 
 function AddEvent({ onClose, onPostSuccess, settingTrue }) {

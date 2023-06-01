@@ -5,7 +5,7 @@ import myImage from './images/ist_logo.png';
 import App from './animation';
 function Signup(props) {
   return (
-    <div className='container1' >
+    <div className='container1'>
      <div >
         <App/>
     </div>

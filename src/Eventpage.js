@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 import App from './homeanimation';
 import Footer from './footer.js'
 import { FaThumbsUp, FaThumbsDown } from 'react-icons/fa';
-import axios from 'axios';
+import axios from './axiosInterceptor';
 import BannerPopup from './time_popup';
 
 function EventsMainPage() {
@@ -25,7 +25,7 @@ function EventsMainPage() {
     const [userType, setusertype] = useState(false);
     const months = {"01":"Jan","02":"Feb","03":"Mar","04":"April","05":"May","06":"June","07":"July","08":"Aug","09":"Sept","10":"Oct","11":"Nov","12":"Dec"}
     const [upnext,setupnext]=useState('')
-
+     
     useEffect(() => {
         axios.get('http://localhost:3002/UserCheck')
             .then(response => {setusertype(response.data);})

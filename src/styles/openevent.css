@@ -25,11 +25,11 @@
     border-radius: 2%;
     font-size: 24px;
     color: #009688;
-    padding: 40px;
+    padding: 20px;
     box-shadow:
-      inset #009688 0 0 0 5px, 
-      inset #059c8e 0 0 0 1px, 
-      inset #0cab9c 0 0 0 10px, 
+      inset #0af7df 0 0 0 5px, 
+      inset #0bdfc9 0 0 0 1px, 
+      inset #0fb4a4 0 0 0 10px, 
       inset #1fbdae 0 0 0 11px, 
       inset #8ce9ff 0 0 0 16px, 
       inset #48e4d6 0 0 0 17px, 
@@ -40,7 +40,8 @@
     text-align: left;
     font-size: xx-large;
     text-transform: capitalize;
-    padding-left: 5%;
+    padding-left: 10%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-top: 3%;
      text-transform: uppercase;
      font-weight: 500;

@@ -6,7 +6,7 @@ import Image from './images/nophoto.png';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import axios from './axiosInterceptor';
 import { Buffer } from 'buffer';
 
 
