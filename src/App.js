@@ -11,6 +11,9 @@ import DeleteEvent from './deleteEvent.js'
 import ProfileComponent from './profile';
 import OpenedEvent from './openEvent.js'
 import TicketForm from './ticketmodal.js';
+import AboutPage from './about.js'
+import Bio from './bio.js'
+
 function App() {
   
   return (
@@ -24,9 +27,10 @@ function App() {
       <Route exact path='/pending' element={< RequestApprovalScreen />}/>
       <Route exact path='/Requests' element={< RequestsPage />}/>
       <Route exact path='/deletepage' element={< DeleteEvent />}/>
-      <Route exact path='/deletepage' element={< DeleteEvent />}/>
       <Route exact path='/prof' element={< ProfileComponent />}/>
       <Route exact path='/ticketbook' element={< TicketForm />}/>
+      <Route exact path='/about' element={< AboutPage />}/>
+      <Route exact path='/bio' element={< Bio />}/>
     </Routes>
     </div>
 </Router>

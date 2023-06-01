@@ -22,8 +22,9 @@ function OpenedEvent(){
     };
 console.log("empty",data)
     return(
-        
         <div className="my-container">
+            <marquee  className="banner">Notice: Report a black ticket seller at 03321.... and receive a 
+            complimentary ticket as a token of our appreciation .</marquee >
             <div className=" building-div">
                 <img src={`data:image/jpeg;base64,${Buffer.from(data.image).toString('base64')}`} alt='.' className='img-fluid '/>
             </div>

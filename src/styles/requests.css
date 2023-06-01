@@ -1,12 +1,12 @@
 html{
     background:none;
-}
+ }
 .body-2{
     background-color: white;
     display: flex;
     flex-direction: row;
     height: 100vh;
-}
+  }
 .table{
     border: 2px solid white;
     color:black;
@@ -15,7 +15,7 @@ html{
 .height{
     max-height: 80px;
     max-width: 80px;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 .heading{
     background-color: rgb(241, 241, 241);
@@ -36,7 +36,7 @@ html{
     margin: 5px;
 }
 .table-parent{
-    margin: 40px;
+    padding: 40px;
 }
 .set-heading-div{
     display: flex;

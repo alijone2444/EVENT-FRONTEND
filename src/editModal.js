@@ -3,7 +3,7 @@ import { Modal, Button, Form,Image } from "react-bootstrap";
 import axios from 'axios';
 import { Buffer } from 'buffer';
 import RenderEditAlert from './editalert';
-
+import {FaMapMarkerAlt} from 'react-icons/fa';
 function EventsEditModal({selectedItems,onhide,onPostSuccess,settingtrue}){
     
   const [formdata,setFormData] = useState(null)
@@ -176,14 +176,21 @@ axios.post("http://localhost:3002/modalEdit", formData2, config)
     onChange={(e) => setformattedDate(e.target.value)}
   />
 </Form.Group>
- <Form.Group>
+          <Form.Group>
             <Form.Label>Address</Form.Label>
-            <Form.Control
-              type="text"
+            <div className="address-input" style={{ position: "relative" }}>
+              <Form.Control
+                type="text"
+                placeholder="Enter event address ( ----,---- )"
+                
               name="address"
               value={place}
-              onChange={(e) => setplace(e.target.value)}
-            />
+              onChange={(e) => setplace(e.target.value)}style={{ color: formStyles.AdressColor, paddingRight: "40px" }}
+              />
+              <button className="location-button" style={{ position: "absolute", right: "0", top: "50%", transform: "translateY(-50%)" }}>
+                <FaMapMarkerAlt />
+              </button>
+            </div>
           </Form.Group>
           <Form.Group>
             <Form.Label>Description</Form.Label>

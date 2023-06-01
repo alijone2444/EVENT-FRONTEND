@@ -5,7 +5,7 @@ import { Reflector, CameraShake, OrbitControls, useTexture } from '@react-three/
 import { KernelSize } from 'postprocessing'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader'
-import './styles/style_of_home_page.css';
+import './styles/style.css';
 
 function Triangle({ color, ...props }) {
   const ref = useRef()
@@ -46,7 +46,7 @@ function Ground(props) {
 
 export default function App() {
   return (
-    <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 15] }} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} resize={{ polyfill: ResizeObserver }}
+    <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 15] }} style={{ position:"fixed", top: 0, left: 0, width: '100%', height: '100%' }} resize={{ polyfill: ResizeObserver }}
     >
       <color attach="background" args={['black']} />
       <ambientLight />

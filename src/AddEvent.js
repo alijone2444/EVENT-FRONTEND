@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaEdit } from 'react-icons/fa';
+import { FaEdit , FaMapMarkerAlt} from 'react-icons/fa';
 import './index.css';
 import './styles/addevent.css';
 import axios from 'axios';
@@ -206,13 +206,19 @@ function AddEvent({ onClose, onPostSuccess, settingTrue }) {
           </Form.Group>
           <Form.Group>
             <Form.Label>Address</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter event address ( ----,---- )"
-              onChange={e => handleAdress(e)}
-              style={{ color: formStyles.AdressColor }}
-            />
+            <div className="address-input" style={{ position: "relative" }}>
+              <Form.Control
+                type="text"
+                placeholder="Enter event address ( ----,---- )"
+                onChange={(e) => handleAdress(e)}
+                style={{ color: formStyles.AdressColor, paddingRight: "40px" }}
+              />
+              <button className="location-button" style={{ position: "absolute", right: "0", top: "50%", transform: "translateY(-50%)" }}>
+                <FaMapMarkerAlt />
+              </button>
+            </div>
           </Form.Group>
+
           <Form.Group>
             <Form.Label>Description</Form.Label>
             <Form.Control
@@ -242,6 +248,7 @@ function AddEvent({ onClose, onPostSuccess, settingTrue }) {
               onChange={e => handleImageChange(e)}
               style={{ color: formStyles.ImgColor }}
             />
+            
             <div className="image-container">
               {image && <Image src={URL.createObjectURL(image)} alt="Selected Image" />}
             </div>

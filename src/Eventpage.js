@@ -15,6 +15,7 @@ import App from './homeanimation';
 import Footer from './footer.js'
 import { FaThumbsUp, FaThumbsDown } from 'react-icons/fa';
 import axios from 'axios';
+import BannerPopup from './time_popup';
 
 function EventsMainPage() {
     const navigate = useNavigate()
@@ -40,28 +41,6 @@ function EventsMainPage() {
         }
     },[IsLoading]);
     
-    console.log("usertype is:", userType);
-
-// Assuming 'data' is the array of dates
-const currentDate = new Date();
-let closestDate = null;
-let closestDateDifference = Infinity;
-
-for (let i = 0; i < data.length; i++) {
-  const obj = data[i];
-  const eventDate = new Date(obj.DateHeld);
-
-  // Calculate the difference in milliseconds between current date and event date
-  const difference = Math.abs(eventDate - currentDate);
-
-  if (difference < closestDateDifference) {
-    closestDateDifference = difference;
-    closestDate = eventDate;
-  }
-}
-
-console.log("The closest date is:", closestDate);
-
     const handleAddEvent = () => {
       setShowModal(true);
     };
@@ -92,12 +71,14 @@ console.log("The closest date is:", closestDate);
     const handleOpenEvent =(item)=>{
         console.log("data sending",item)
         navigate('/Event', { state: { data: item ,type:true} })
-
+    
     }
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    console.log(localStorage.getItem('isLoggedIn'))
     return (
     <div className='body'>
-        
         <App/>
+        {isLoggedIn && <BannerPopup/>}
         <NavbarComponent data={userType}/>
         <div className="container empty-white ">
             <div className="row ">

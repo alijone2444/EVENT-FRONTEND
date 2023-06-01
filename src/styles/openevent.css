@@ -1,23 +1,51 @@
 .my-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    padding-bottom: 20%;
   }
+  .banner{
+    background-color:rgb(255, 255, 255);
+    font-size:20px;
+    font-family: georgia;
+    font-style:italic;
+    color:red;
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+
   .building-div{
     height: 70vh;
     width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
   .building-div img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-bottom: 10px solid rgba(133, 133, 133, 0.295);
+    border-radius: 2%;
+    font-size: 24px;
+    color: #009688;
+    padding: 40px;
+    box-shadow:
+      inset #009688 0 0 0 5px, 
+      inset #059c8e 0 0 0 1px, 
+      inset #0cab9c 0 0 0 10px, 
+      inset #1fbdae 0 0 0 11px, 
+      inset #8ce9ff 0 0 0 16px, 
+      inset #48e4d6 0 0 0 17px, 
+      inset #e5f9f7 0 0 0 21px, 
+      inset #bfecf7 0 0 0 22px;
 }
 .name{
     text-align: left;
+    font-size: xx-large;
     text-transform: capitalize;
-    padding-left: 20px;
-    font-family: Georgia, serif;
-    padding-top: 40px;
+    padding-left: 5%;
+    padding-top: 3%;
+     text-transform: uppercase;
+     font-weight: 500;
+     color: #464e4e;
+    
   }
 .btnhover{
   font-family: Helvetica;
@@ -85,6 +113,7 @@ height: 70px;
   font-weight: 400;
   font-size: 22px;
   text-align: left;
+  padding-top: 3%;
 }
 .paragraph{
   font-weight: 300;

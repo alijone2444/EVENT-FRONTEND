@@ -57,7 +57,7 @@ function DeleteEvent(props){
 
     return(
         <div>
-    <div className='col'>
+        <div className='col'>
           <div className='heading row'>
             <div className='set-heading-div'>
               <h1 style={{fontWeight:'lighter',paddingRight:"20px",paddingLeft:"20px"}}>Events</h1>      

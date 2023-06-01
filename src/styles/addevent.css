@@ -7,3 +7,7 @@
     max-width: 100%;
     height: auto;
   }
+  .location-button{
+    background-color: transparent;
+    border: transparent;
+  }

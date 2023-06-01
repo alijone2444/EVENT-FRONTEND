@@ -51,7 +51,8 @@ const handleLogin = (e) => {
       console.log( response.data.token)
       Cookies.set('token', response.data.token, { expires: 6, sameSite: 'strict' });
       axios.defaults.headers.common['Authorization'] = `Bearer ${Cookies.get('token')}`;
-      navigate('/Home');
+      navigate('/Home');  
+      localStorage.setItem('isLoggedIn', 'true');
       errorfield.style.color = "blue";}
 })
   .catch((error) => {
@@ -84,6 +85,7 @@ const handleLogin = (e) => {
                   </form>
           </div>
       </div>
+      
     </div>
 );
 }

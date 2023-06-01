@@ -1,10 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import './styles/footer.css'
-
 import { AiOutlineEnvironment ,AiOutlinePhone ,AiOutlineMail ,AiOutlineInstagram, AiFillFacebook} from 'react-icons/ai';
+import { useNavigate } from "react-router-dom";
+
 
 const Footer = () => {
+
+  const navigate = useNavigate()
+
+  const handleabout = ()=>{
+    navigate('/about')
+  }
   return (
     <footer className="bg-dark text-light style">
       <Container>
@@ -33,7 +40,7 @@ const Footer = () => {
                     <a href="/services">Services</a>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <a href="#" onClick={handleabout}>About</a>
                 </li>
                 </ul>
             </div>

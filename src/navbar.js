@@ -40,27 +40,27 @@ function NavbarComponent(props) {
     navigate('/prof');
   };
 
-  const handleSetImage = e => {
+  const handleSetImage = async (e) => {
     const selectedImage = e.target.files[0];
     const formData = new FormData();
     formData.append('image', selectedImage);
-    const config = {
-      headers: { 'content-type': 'multipart/form-data' }
-    };
-    axios
-      .post('http://localhost:3002/photosave', formData, config)
-      .then(response => {
-        if (response.data === false) {
-          console.log('already image present');
-          setImage(null); // Reset the image state to null
-        } else {
-          setImage(response.data.data);
-        }
-      })
-      .catch(error => {
-        console.log(error);
+  
+    try {
+      const response = await axios.post('http://localhost:3002/photosave', formData, {
+        headers: { 'Content-Type': 'multipart/form-data' },
       });
+  
+      if (response.data === false) {
+        console.log('Already image present');
+        setImage(null); // Reset the image state to null
+      } else {
+        setImage(response.data.data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
+  
 
   return (
     <Navbar collapseOnSelect expand="lg" variant="light" style={{ background: 'transparent' }}>
